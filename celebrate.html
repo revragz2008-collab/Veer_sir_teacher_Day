@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakhveer Singh Sir - Celebration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="teacher-page theme-lakhveer">
+    <audio id="teacher-song" autoplay loop><source src="teacher-song.mp3" type="audio/mpeg"></audio>
+    <button id="music-toggle" class="music-btn">🔊</button>
+    <div class="bg-decor">
+        <span class="floating-emoji" style="top: 8%; left: 8%; font-size: 2.8rem;">💻</span>
+        <span class="floating-emoji" style="top: 40%; right: 12%; font-size: 3rem;">⚡</span>
+        <span class="floating-emoji" style="top: 70%; left: 15%; font-size: 2.8rem;">🛠️</span>
+    </div>
+    <div class="home-container" style="padding-top: 30px;">
+        <div class="t-container">
+            <div class="t-header"><h4>✦ TEACHERS' DAY 2026 ✦</h4></div>
+            <div class="profile-wrapper">
+                <img src="images/lakhveer.jpg" class="teacher-img" alt="Lakhveer Singh Sir" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="img-fallback" style="display:none;">LS</div>
+            </div>
+            <div class="t-titles" style="margin-top: 15px;">
+                <h1>Lakhveer Singh Sir</h1>
+                <p class="subject">Computer & Technology</p>
+                <p class="p-title">💻 The Beginning of My Digital Journey</p>
+            </div>
+            <div class="message-card">
+                <h5>A MESSAGE FOR YOU</h5>
+                <div class="message-body">
+                    <p>Dear Sir,</p><br>
+                    <p>You were the one who introduced me to the world of computers when I was just in Class 1. Even while you were learning alongside us, you encouraged me to explore, experiment, and never be afraid of errors.</p><br>
+                    <p>Your words, “Make the error, I’ll solve it,” gave me the confidence to try anything. You were my first teacher in technology and the reason it became an important part of my life.</p>
+                    <div class="quote-highlight">"Make the error, I’ll solve it."</div>
+                    <div class="small-highlight">💻 Exploration • Technology • Confidence</div>
+                </div>
+                <div class="t-footer"><p>Thank you for being you.</p><p>With gratitude & respect ❤️</p></div>
+            </div>
+            <div style="text-align: center; margin-top: 20px;"><a href="index.html" style="color: #a7f3d0; font-size: 0.9rem; text-decoration: underline;">← Back to Home</a></div>
+        </div>
+        <footer class="footer"><p>Army Public School Miran Sahib</p><p>Made with ❤️ by Raghav</p></footer>
+    </div>
+    <script>
+        const song = document.getElementById("teacher-song");
+        const toggleBtn = document.getElementById("music-toggle");
+        let playing = true;
+        song.volume = 0.7;
+        toggleBtn.addEventListener("click", () => {
+            if (playing) { song.pause(); toggleBtn.classList.add("muted"); toggleBtn.innerText = "🔇"; playing = false; }
+            else { song.play(); toggleBtn.classList.remove("muted"); toggleBtn.innerText = "🔊"; playing = true; }
+        });
+    </script>
+</body>
+</html>
